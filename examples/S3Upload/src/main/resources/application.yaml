@@ -1,0 +1,16 @@
+server:
+  port: 3010
+cloud:
+  aws:
+    s3:
+      bucket: <your-bucket-name>
+      stack.auto: false
+      region.static: ap-northeast-2
+      credentials:
+        accessKey: <your-access-key>
+        secretKey: <your-secret-key>
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
